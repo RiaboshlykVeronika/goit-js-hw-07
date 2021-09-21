@@ -7,7 +7,7 @@ refs.input.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
     if (refs.input.value === '') {
-        refs.nameLabel = 'незнакомец';
+        refs.nameLabel.textContent = 'незнакомец';
         console.log('')
     } else {
         refs.nameLabel.textContent = event.currentTarget.value;
